@@ -50,7 +50,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartHolder> {
         holder.tvName.setText(listCart.get(position).getName());
         holder.tvPrice.setText(listCart.get(position).getPrice());
         holder.tvPcs.setText("x"+listCart.get(position).getPcs());
-        Glide.with(context)t
+        Glide.with(context)
                 .load(listCart.get(position).getImage())
                 .apply(new RequestOptions().centerCrop())
                 .into(holder.imageView);
